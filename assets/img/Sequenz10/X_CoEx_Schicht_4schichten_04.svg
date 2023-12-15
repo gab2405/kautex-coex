@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 481 469" style="enable-background:new 0 0 481 469;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000039847342276210782080000011243860552859881884_);fill:#E36B2F;}
+	.st1{clip-path:url(#SVGID_00000039847342276210782080000011243860552859881884_);fill:#89A84F;}
+	.st2{clip-path:url(#SVGID_00000039847342276210782080000011243860552859881884_);fill:#008CA0;}
+	.st3{clip-path:url(#SVGID_00000039847342276210782080000011243860552859881884_);fill:#A3C7D2;}
+	.st4{fill:#F1B434;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M34.7,234.5c0,113.4,91.9,205.3,205.3,205.3c113.4,0,205.3-91.9,205.3-205.3
+			c0-113.4-91.9-205.3-205.3-205.3C126.6,29.2,34.7,121.1,34.7,234.5"/>
+	</defs>
+	<clipPath id="SVGID_00000013892749269219978650000016927734007563908481_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<rect x="198.9" y="21.9" style="clip-path:url(#SVGID_00000013892749269219978650000016927734007563908481_);fill:#E36B2F;" width="41.1" height="425.2"/>
+	
+		<rect x="240" y="21.9" style="clip-path:url(#SVGID_00000013892749269219978650000016927734007563908481_);fill:#89A84F;" width="41.1" height="425.2"/>
+	
+		<rect x="157.9" y="21.9" style="clip-path:url(#SVGID_00000013892749269219978650000016927734007563908481_);fill:#008CA0;" width="41.1" height="425.2"/>
+	
+		<rect x="281.1" y="21.9" style="clip-path:url(#SVGID_00000013892749269219978650000016927734007563908481_);fill:#A3C7D2;" width="41.1" height="425.2"/>
+</g>
+<g>
+	<path class="st4" d="M240,447.9c-117.7,0-213.4-95.7-213.4-213.4S122.3,21.1,240,21.1c57,0,110.6,22.2,150.9,62.5
+		c40.3,40.3,62.5,93.9,62.5,150.9s-22.2,110.6-62.5,150.9C350.6,425.7,297,447.9,240,447.9z M240,37.2
+		c-108.8,0-197.3,88.5-197.3,197.3c0,108.8,88.5,197.3,197.3,197.3c108.8,0,197.3-88.5,197.3-197.3C437.3,125.7,348.8,37.2,240,37.2
+		z"/>
+</g>
+</svg>
