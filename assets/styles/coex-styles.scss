@@ -938,6 +938,10 @@
     transform: translateX(-50%);
     color: var(--color-white);
     text-align: center;
+
+    &.--smaller {
+      font-size: 2.0rem;
+    }
   }
 
   &.visible {
@@ -1115,6 +1119,9 @@
     top: 47%;
 
     .text {
+      &.--smaller {
+        font-size: 1.4em;
+      }
     }
   }
 }
@@ -1398,6 +1405,9 @@
     top: 50%;
     font-weight: 400;
     max-width: 45%;
+    &.--higher {
+      top: 45%;
+    }
   }
   .layer-text {
     color: var(--color-white);
@@ -1491,6 +1501,10 @@
     left: var(--align-left);
     top: 28%;
     color: var(--color-white);
+
+    &.--smaller {
+      font-size: 2.25em;
+    }
   }
 
   .subheading {

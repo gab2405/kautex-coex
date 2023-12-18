@@ -752,6 +752,9 @@
   color: var(--color-white);
   text-align: center;
 }
+.--b02 .text.--smaller {
+  font-size: 2rem;
+}
 .--b02.visible .buckets-wrap {
   opacity: 1;
   animation-delay: 0.9s;
@@ -898,6 +901,10 @@
   left: 52%;
   top: 47%;
 }
+.--b05 .text-wrap .text.--smaller {
+  font-size: 1.4em;
+}
+
 .--b06 {
   top: -50%;
   left: 0;
@@ -1127,6 +1134,9 @@
   font-weight: 400;
   max-width: 45%;
 }
+.--b10 .text.--higher {
+  top: 45%;
+}
 .--b10 .layer-text {
   color: var(--color-white);
   left: var(--align-left);
@@ -1214,6 +1224,9 @@
   left: var(--align-left);
   top: 28%;
   color: var(--color-white);
+}
+.--b12 .heading.--smaller {
+  font-size: 2.25em;
 }
 .--b12 .subheading {
   font-weight: 400;
