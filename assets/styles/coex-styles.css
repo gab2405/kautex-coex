@@ -10,6 +10,39 @@
   --align-left: 4%;
 }
 
+.nav {
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1px;
+  margin: 0;
+  font-family: "Arial", "sans-serif";
+  font-size: 10px;
+}
+.nav p {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  cursor: pointer;
+  border-bottom: solid 1px transparent;
+  transition: border 0.4s;
+  margin: 0;
+}
+.nav p.active {
+  border-color: #f1b434;
+  cursor: default;
+}
+.nav a {
+  min-width: 20px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .anim.--fade {
   transition: opacity 0.4s;
   opacity: 0;
@@ -133,6 +166,11 @@
   transform: scaleX(1);
 }
 
+.banner-container {
+  margin: auto;
+  max-width: 1200px;
+}
+
 .banner-wrapper {
   position: relative;
   font-size: 16px;
@@ -141,11 +179,6 @@
   font-family: "Arial", "sans-serif";
   aspect-ratio: 31/22;
   overflow: hidden;
-}
-@media screen and (max-width: 1199px) {
-  .banner-wrapper {
-    font-size: 1.33vw;
-  }
 }
 .banner-wrapper .banner-track {
   transition: transform 0.4s;
@@ -1082,29 +1115,26 @@
 }
 .--b09.visible .can-wrap.--c1 {
   left: 3%;
+  top: 74%;
 }
 .--b09.visible .can-wrap.--c2 {
   left: 15%;
+  top: 74%;
 }
 .--b09.visible .can-wrap.--c3 {
   left: 27%;
+  top: 74%;
 }
 .--b09.visible .can-wrap.--c4 {
   left: 80%;
 }
 .--b09.visible .can-wrap.--c5 {
-  left: 3%;
+  left: 7%;
+  top: 52%;
 }
 .--b09.visible .can-wrap.--c6 {
-  left: 15%;
-}
-.--b09.visible .can-wrap.--s05.--hide-s07 {
-  opacity: 0;
-  transition: left 0.4s 2.6s, opacity 0.4s 3.6s;
-}
-.--b09.visible .can-wrap.--s06.--hide-s08 {
-  opacity: 0;
-  transition: left 0.4s 3.1s, opacity 0.4s 4.1s;
+  left: 21%;
+  top: 52%;
 }
 .--b09 .arrow.--down {
   left: 86%;

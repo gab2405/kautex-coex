@@ -2,16 +2,25 @@ const visibleClass = 'visible';
 const trackElement = shadow.querySelector('.banner-track');
 const bannerWrapper = shadow.querySelector('.banner-wrapper');
 const banners = shadow.querySelectorAll('.banner');
-// const devNav = shadow.querySelector('.dev-nav');
+const nav = shadow.querySelector('.nav');
 //
-// const initDevNav = () => {
-//     devNav.addEventListener('click', (e) => {
-//         const target = e.target;
-//         const targetSelector = target.getAttribute('data-target');
-//         navigate(targetSelector);
-//     })
-// }
-// initDevNav();
+const initNav = () => {
+    nav.addEventListener('click', (e) => {
+        const target = e.target;
+        const targetSelector = target.getAttribute('data-target');
+        navigate(targetSelector);
+    })
+}
+initNav();
+
+const initFontSize = () => {
+    const wrapperWidth = bannerWrapper.clientWidth;
+    const calcSize = wrapperWidth * .013;
+    bannerWrapper.style.fontSize = calcSize + 'px';
+}
+initFontSize();
+window.addEventListener('resize', initFontSize);
+window.addEventListener('orientationchange', initFontSize);
 
 const navigate = (targetSelector) => {
     const targetBanner = shadow.querySelector('.' + targetSelector);
@@ -59,9 +68,9 @@ const navigate = (targetSelector) => {
         trackElement.style.transform = 'translate(50%, 0%)';
     }
 
-    // devNav.querySelectorAll('p')?.forEach(el => el.classList.remove('active'));
-    // const devNavEl = devNav.querySelector('[data-target=' + targetSelector + ']');
-    // devNavEl.classList.add('active')
+    nav.querySelectorAll('p')?.forEach(el => el.classList.remove('active'));
+    const navEl = nav.querySelector('[data-target=' + targetSelector + ']');
+    navEl.classList.add('active')
 }
 const initArrows = () => {
     const arrows = shadow.querySelectorAll('.arrow-hover-wrap');

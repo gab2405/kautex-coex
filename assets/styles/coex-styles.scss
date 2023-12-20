@@ -10,39 +10,41 @@
   --align-left: 4%;
 }
 
-// DEV
-//.container {
-//  width: 100%;
-//  max-width: 1200px;
-//  margin: 20px auto;
-//}
-//.arrow img {
-//  opacity: 1 !important;
-//}
-//.dev-nav {
-//  z-index: 10;
-//  display: flex;
-//  gap: 5px;
-//  margin-top: 1rem;
-//  margin-bottom: 2rem;
-//
-//  p {
-//    width: 20px;
-//    height: 20px;
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    background: #eee;
-//    cursor: pointer;
-//    border: solid 1px transparent;
-//    transition: border .4s;
-//    &.active {
-//      border-color: #000;
-//      cursor: default;
-//    }
-//  }
-//}
-//
+.nav {
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1px;
+  margin: 0;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 10px;
+
+  p {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    cursor: pointer;
+    border-bottom: solid 1px transparent;
+    transition: border .4s;
+    margin: 0;
+    &.active {
+      border-color: #f1b434;
+      cursor: default;
+    }
+  }
+
+  a {
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 //.screen {
 //  position: absolute;
 //  top: 0;
@@ -215,13 +217,18 @@
   }
 }
 
+.banner-container {
+  margin: auto;
+  max-width: 1200px;
+}
+
 .banner-wrapper {
   position: relative;
   font-size: 16px;
   width: 100%;
   max-width: 1200px;
   @media screen and (max-width: 1199px) {
-    font-size: 1.33vw;
+    //font-size: 1.33vw;
   }
 
 
@@ -1352,29 +1359,26 @@
   &.visible .can-wrap {
     &.--c1 {
       left: 3%;
+      top: 74%;
     }
     &.--c2 {
       left: 15%;
+      top: 74%;
     }
     &.--c3 {
       left: 27%;
+      top: 74%;
     }
     &.--c4 {
       left: 80%;
     }
     &.--c5 {
-      left: 3%;
+      left: 7%;
+      top: 52%;
     }
     &.--c6 {
-      left: 15%;
-    }
-    &.--s05.--hide-s07 {
-      opacity: 0;
-      transition: left 0.4s 2.6s, opacity 0.4s 3.6s;
-    }
-    &.--s06.--hide-s08 {
-      opacity: 0;
-      transition: left 0.4s 3.1s, opacity 0.4s 4.1s;
+      left: 21%;
+      top: 52%;
     }
   }
   .arrow.--down{
