@@ -1100,7 +1100,7 @@
 }
 .--b09 .can-wrap {
   text-align: center;
-  width: 12%;
+  width: 10%;
   top: 66%;
   left: 50%;
 }
@@ -1114,26 +1114,26 @@
   font-size: 1em;
 }
 .--b09.visible .can-wrap.--c1 {
-  left: 3%;
+  left: 4%;
   top: 74%;
 }
 .--b09.visible .can-wrap.--c2 {
-  left: 15%;
+  left: 16%;
   top: 74%;
 }
 .--b09.visible .can-wrap.--c3 {
-  left: 27%;
+  left: 28%;
   top: 74%;
 }
 .--b09.visible .can-wrap.--c4 {
   left: 80%;
 }
 .--b09.visible .can-wrap.--c5 {
-  left: 7%;
+  left: 8%;
   top: 52%;
 }
 .--b09.visible .can-wrap.--c6 {
-  left: 21%;
+  left: 22%;
   top: 52%;
 }
 .--b09 .arrow.--down {
