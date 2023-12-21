@@ -19,6 +19,7 @@ const initFontSize = () => {
     bannerWrapper.style.fontSize = calcSize + 'px';
 }
 initFontSize();
+setTimeout(initFontSize, 100); // sometimes this seems necessary
 window.addEventListener('resize', initFontSize);
 window.addEventListener('orientationchange', initFontSize);
 
