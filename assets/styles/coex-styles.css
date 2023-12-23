@@ -532,13 +532,13 @@
 .banner-wrapper.--current--b09 .can {
   opacity: 1;
   width: 42%;
-  right: 25%;
+  right: 16%;
   top: 33%;
   transition-delay: 0s;
 }
 .banner-wrapper.--current--b09 .can-layer {
   opacity: 1;
-  left: 57%;
+  left: 66%;
   transition: left 0.4s;
   transition-delay: 0s;
 }
@@ -1103,6 +1103,8 @@
   width: 10%;
   top: 66%;
   left: 50%;
+  opacity: 0;
+  transition: left 0.4s, opacity 0s 0s;
 }
 .--b09 .can-img {
   width: auto;
@@ -1113,20 +1115,25 @@
   font-weight: 400;
   font-size: 1em;
 }
+.--b09.visible .can-wrap {
+  opacity: 1;
+  transition: left 0.4s, opacity 0s 0.4s;
+}
 .--b09.visible .can-wrap.--c1 {
   left: 4%;
-  top: 74%;
+  top: 77%;
 }
 .--b09.visible .can-wrap.--c2 {
   left: 16%;
-  top: 74%;
+  top: 77%;
 }
 .--b09.visible .can-wrap.--c3 {
   left: 28%;
-  top: 74%;
+  top: 77%;
 }
 .--b09.visible .can-wrap.--c4 {
-  left: 80%;
+  top: 57%;
+  left: 36%;
 }
 .--b09.visible .can-wrap.--c5 {
   left: 8%;
@@ -1136,8 +1143,32 @@
   left: 22%;
   top: 52%;
 }
+.--b09.visible .can-wrap.--s05 {
+  transition-delay: 2.6s;
+}
+.--b09.visible .can-wrap.--s06 {
+  transition-delay: 3.1s;
+}
+.--b09.visible .can-wrap.--s07 {
+  transition-delay: 3.6s;
+}
+.--b09.visible .can-wrap.--s08 {
+  transition-delay: 4.1s;
+}
+.--b09.visible .can-wrap.--s09 {
+  transition-delay: 4.6s;
+}
+.--b09.visible .can-wrap.--s10 {
+  transition-delay: 5.1s;
+}
+.--b09.visible .can-wrap.--s11 {
+  transition-delay: 5.6s;
+}
+.--b09.visible .can-wrap.--s12 {
+  transition-delay: 6.1s;
+}
 .--b09 .arrow.--down {
-  left: 86%;
+  left: 92%;
 }
 
 .--b10 {

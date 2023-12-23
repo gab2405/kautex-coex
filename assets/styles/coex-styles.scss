@@ -641,13 +641,13 @@
     .can {
       opacity: 1;
       width: 42%;
-      right: 25%;
+      right: 16%;
       top: 33%;
       transition-delay: 0s;
     }
     .can-layer {
       opacity: 1;
-      left: 57%;
+      left: 66%;
       transition: left .4s;
       transition-delay: 0s;
     }
@@ -1346,6 +1346,8 @@
     width: 10%;
     top: 66%;
     left: 50%;
+    opacity: 0;
+    transition: left .4s, opacity 0s 0s;
   }
   .can-img {
     width: auto;
@@ -1357,20 +1359,23 @@
     font-size: 1em;
   }
   &.visible .can-wrap {
+    opacity: 1;
+    transition: left .4s, opacity 0s .4s;
     &.--c1 {
       left: 4%;
-      top: 74%;
+      top: 77%;
     }
     &.--c2 {
       left: 16%;
-      top: 74%;
+      top: 77%;
     }
     &.--c3 {
       left: 28%;
-      top: 74%;
+      top: 77%;
     }
     &.--c4 {
-      left: 80%;
+      top: 57%;
+      left: 36%;
     }
     &.--c5 {
       left: 8%;
@@ -1380,9 +1385,33 @@
       left: 22%;
       top: 52%;
     }
+    &.--s05 {
+      transition-delay: 2.6s;
+    }
+    &.--s06 {
+      transition-delay: 3.1s;
+    }
+    &.--s07 {
+      transition-delay: 3.6s;
+    }
+    &.--s08 {
+      transition-delay: 4.1s;
+    }
+    &.--s09 {
+      transition-delay: 4.6s;
+    }
+    &.--s10 {
+      transition-delay: 5.1s;
+    }
+    &.--s11 {
+      transition-delay: 5.6s;
+    }
+    &.--s12 {
+      transition-delay: 6.1s;
+    }
   }
   .arrow.--down{
-    left: 86%;
+    left: 92%;
   }
 }
 
