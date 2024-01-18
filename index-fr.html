@@ -9,8 +9,8 @@
 <!-- start include banner script on any part of the website -->
 <template id="BannerCoExTemplate">
 
-    <link rel="stylesheet" href="/assets/styles/coex-styles.css?v20231223">
-    <script src="/assets/scripts/coex-scripts.js" type="module" defer></script>
+    <link rel="stylesheet" href="/assets/styles/coex-styles.css?v20240117">
+    <script src="/assets/scripts/coex-scripts.js?v20240117" type="module" defer></script>
     <link rel="preload" as="image" href="/assets/img/X_CoEx_bg01.png">
     <link rel="preload" as="image" href="/assets/img/X_CoEx_bg02.png">
     <link rel="preload" as="image" href="/assets/img/X_CoEx_bg03.png">
@@ -30,7 +30,7 @@
 
                 <div class="banner --b01">
                     <img src="/assets/img/X_CoEx_bg01.png" alt="" class="background-img">
-                    <h1 class="heading anim --fade --s01" style="display: none">CONSEILS<span
+                    <h1 class="heading anim --fade --s01" style="display: none">GUIDE PRATIQUE<span
                             class="heading-dash">_</span></h1>
                     <h2 class="sub-heading anim --fade --s02" style="display: none">relatifs aux emballages
                         fabriqués<br/>par coextrusion-soufflage
@@ -152,7 +152,7 @@
                              class="line --l1 anim --scale-left --s02">
                     </div>
                     <div class="circle-wrapper">
-                        <p class="label --l2 anim --fade --s03">Promoteur d'adhérence</p>
+                        <p class="label --l2 anim --fade --s03">Adhésif</p>
                         <img src="/assets/img/Sequenz04/CoEx_Pfeil_Haftvermittler_02.svg"
                              class="line --l2 anim --scale-left --s03">
                     </div>
@@ -182,8 +182,7 @@
                         <p class="text --t1 anim --fade --s04 --smaller">Le matériau de la couche barrière est composé
                             de</p>
                         <p class="text --t2 anim --fade --s05 --smaller">PA (polyamide)</p><br/>
-                        <p class="text --t3 anim --fade --s07 --smaller">ou d'EVOH (copolymère d'éthylène et d'alcool
-                            vinylique).</p>
+                        <p class="text --t3 anim --fade --s07 --smaller">ou d’EVOH (éthylène alcool vinylique).</p>
                     </div>
                     <div class="arrow --up ">
                         <div class="arrow-hover-wrap" data-target="--b06">
@@ -342,9 +341,9 @@
                         a pour fonction d'augmenter la résistance mécanique de l'emballage. La résistance à la rupture
                         par chute est augmentée.</p>
                     <p class="layer-text --t1 anim --fade --s05">Couche barrière (matériau: PA ou EVOH)</p>
-                    <p class="layer-text --t2 anim --fade --s06">Promoteur d'adhérence</p>
+                    <p class="layer-text --t2 anim --fade --s06">Adhésif</p>
                     <p class="layer-text --t3 anim --fade --s07">Nouveau matériau et regranulat</p>
-                    <p class="layer-text --t4 anim --fade --s08">Couche décorative Nouveau matériau</p>
+                    <p class="layer-text --t4 anim --fade --s08">Couche décorative (HDPE)</p>
                 </div>
 
                 <div class="banner --b11">
@@ -358,12 +357,12 @@
                     <h1 class="heading anim --fade --s02">couches</h1>
                     <p class="text anim --fade --s03">Dans la structure à six couches, la couche intérieure
                         supplémentaire a pour fonction de protéger la barrière contre les produits agressifs.</p>
-                    <p class="layer-text --t1 anim --fade --s05">Couche intérieure (nouveau matériau)</p>
-                    <p class="layer-text --t2 anim --fade --s06">Promoteur d'adhérence</p>
+                    <p class="layer-text --t1 anim --fade --s05">Couche intérieure (HDPE)</p>
+                    <p class="layer-text --t2 anim --fade --s06">Adhésif</p>
                     <p class="layer-text --t3 anim --fade --s07">Couche barrière<br/>(matériau: PA ou EVOH)</p>
-                    <p class="layer-text --t4 anim --fade --s08">Promoteur d'adhérence</p>
-                    <p class="layer-text --t5 anim --fade --s09">Nouveau matériau et regranulat</p>
-                    <p class="layer-text --t6 anim --fade --s10">Couche décorative Nouveau matériau</p>
+                    <p class="layer-text --t4 anim --fade --s08">Adhésif</p>
+                    <p class="layer-text --t5 anim --fade --s09">Nouveau matériau et/ou regranulat</p>
+                    <p class="layer-text --t6 anim --fade --s10">Couche décorative (HDPE)</p>
                 </div>
 
                 <div class="banner --b12">
@@ -373,7 +372,7 @@
                          class="can12 --c1 anim --fade-right --s04">
                     <img src="/assets/img/Sequenz12/CoEx_Kanister02.png" alt="Kanister"
                          class="can12 --c2 anim --fade-left --s03">
-                    <img src="/assets/img/Sequenz12/CoEx_Kanister03.png" alt="Kanister"
+                    <img src="/assets/img/20L-A-Serie1.png" alt="Kanister"
                          class="can12 --c3 anim --fade --s02">
                     <img src="/assets/img/Sequenz12/CoEx_Kanister04.png" alt="Kanister"
                          class="can12 --c4 anim --fade-left --s05">
@@ -503,6 +502,9 @@
             <p data-target="--b10">10</p>
             <p data-target="--b11">11</p>
             <p data-target="--b12">12</p>
+            <a href="/de/verpackung/coex-ratgeber" style="margin-left: auto">DE</a>
+            <a href="/en/packaging/coex-guide">EN</a>
+            <a href="/en/packaging/guide-pratique-relatifs-coex" class="active">FR</a>
         </div>
     </div>
 </template>
@@ -510,9 +512,9 @@
 <script>
     // usage of shadow dom to prevent script or styling conflicts with the outer website
     const host = document.querySelector("#BannerCoExHost");
-    const shadow = host.attachShadow({mode: "open"});
+    const coexShadow = host.attachShadow({mode: "open"});
     const template = document.getElementById("BannerCoExTemplate");
-    shadow.appendChild(template.content);
+    coexShadow.appendChild(template.content);
 </script>
 <!-- end include banner script on any part of the website -->
 

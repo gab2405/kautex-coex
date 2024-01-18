@@ -17,31 +17,30 @@
   gap: 1px;
   margin: 0;
   font-family: 'Arial', 'sans-serif';
-  font-size: 10px;
+  font-size: .8rem;
 
-  p {
+  p, a {
     width: 20px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #eee;
+    color: var(--color-blue);
     cursor: pointer;
-    border-bottom: solid 1px transparent;
-    transition: border .4s;
+    transition: background .4s, color .4s;
     margin: 0;
     &.active {
-      border-color: #f1b434;
+      background-color: #f1b434;
+      color: #fff;
       cursor: default;
     }
   }
 
   a {
-    min-width: 20px;
+    min-width: 25px;
     min-height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-decoration: none;
   }
 }
 
@@ -354,7 +353,7 @@
       width: 5%;
       left: 0;
       top: 50%;
-      transform: translate(50%, -50%);
+      transform: translate(50%, -50%) scaleX(-1);
     }
   }
 
@@ -1079,7 +1078,7 @@
 
 .--b05 {
   top: 0;
-  left: 0;
+  left: 100%;
 
   .heading {
     .blue-light {
@@ -1135,7 +1134,7 @@
 
 .--b06 {
   top: -50%;
-  left: 0;
+  left: 100%;
 
   .arrow.--left {
     top: 65%;
@@ -1202,7 +1201,7 @@
 
 .--b07 {
   top: -50%;
-  left: -50%;
+  left: 150%;
 
   .can {
     width: 35%;
@@ -1270,7 +1269,7 @@
 
 .--b08 {
   top: 0;
-  left: -50%;
+  left: 150%;
 
   .text-top-wrap {
     top: 12%;
@@ -1298,10 +1297,9 @@
   }
 }
 
-
 .--b09 {
   top: -50%;
-  left: -50%;
+  left: 150%;
 
   .text-top-wrap {
     top: 12%;
@@ -1336,8 +1334,8 @@
   .subheading {
     color: var(--color-white);
     font-weight: 400;
-    left: 53%;
-    top: 33%;
+    top: 44%;
+    left: 35%;
   }
 
 
@@ -1417,7 +1415,7 @@
 
 .--b10 {
   top: 0%;
-  left: -50%;
+  left: 150%;
 
   .four {
     width: 15%;
@@ -1466,7 +1464,7 @@
 
 .--b11 {
   top: 0;
-  left: -100%;
+  left: 200%;
 
   .six {
     width: 15%;
@@ -1521,18 +1519,18 @@
 
 .--b12 {
   top: 0;
-  left: -50%;
+  left: 250%;
 
   .preheading {
     font-weight: 400;
     left: var(--align-left);
-    top: 16%;
+    top: 6%;
     color: var(--color-white)
   }
 
   .heading {
     left: var(--align-left);
-    top: 28%;
+    top: 18%;
     color: var(--color-white);
 
     &.--smaller {
@@ -1543,7 +1541,7 @@
   .subheading {
     font-weight: 400;
     left: var(--align-left);
-    top: 38%;
+    top: 28%;
     color: var(--color-white);
     font-size: 1.85em;
   }
@@ -1561,7 +1559,7 @@
     }
     &.--c3 {
       width: 22%;
-      top: 44%;
+      top: 50%;
       left: 4%;
     }
     &.--c4 {

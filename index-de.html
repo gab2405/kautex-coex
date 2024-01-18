@@ -8,8 +8,8 @@
 
 <!-- start include banner script on any part of the website -->
 <template id="BannerCoExTemplate">
-    <link rel="stylesheet" href="/assets/styles/coex-styles.css?v20231223">
-    <script src="/assets/scripts/coex-scripts.js" type="module" defer></script>
+    <link rel="stylesheet" href="/assets/styles/coex-styles.css?v20240117">
+    <script src="/assets/scripts/coex-scripts.js?v20240117" type="module" defer></script>
     <link rel="preload" as="image" href="/assets/img/X_CoEx_bg01.png">
     <link rel="preload" as="image" href="/assets/img/X_CoEx_bg02.png">
     <link rel="preload" as="image" href="/assets/img/X_CoEx_bg03.png">
@@ -342,7 +342,7 @@
                     <p class="layer-text --t1 anim --fade --s05">Barriere (Material: PA oder EVOH)</p>
                     <p class="layer-text --t2 anim --fade --s06">Haftvermittler</p>
                     <p class="layer-text --t3 anim --fade --s07">Neues Material und Regranulat</p>
-                    <p class="layer-text --t4 anim --fade --s08">Dekorschicht neues Material</p>
+                    <p class="layer-text --t4 anim --fade --s08">Dekorschicht (HDPE)</p>
                 </div>
 
                 <div class="banner --b11">
@@ -356,12 +356,12 @@
                     <h1 class="heading anim --fade --s02">Schichten</h1>
                     <p class="text anim --fade --s03">Beim Sechsschicht-Aufbau hat die weitere Innenschicht die Aufgabe
                         die Barriere vor aggressiven Medien zu schützen.</p>
-                    <p class="layer-text --t1 anim --fade --s05">Innenschicht (neues Material)</p>
+                    <p class="layer-text --t1 anim --fade --s05">Innenschicht (HDPE)</p>
                     <p class="layer-text --t2 anim --fade --s06">Haftvermittler</p>
                     <p class="layer-text --t3 anim --fade --s07">Barriereschicht<br/>(Material: PA oder EVOH)</p>
                     <p class="layer-text --t4 anim --fade --s08">Haftvermittler</p>
                     <p class="layer-text --t5 anim --fade --s09">Neues Material und Regranulat</p>
-                    <p class="layer-text --t6 anim --fade --s10">Dekorschicht neues Material</p>
+                    <p class="layer-text --t6 anim --fade --s10">Dekorschicht (HDPE)</p>
                 </div>
 
                 <div class="banner --b12">
@@ -371,7 +371,7 @@
                          class="can12 --c1 anim --fade-right --s04">
                     <img src="/assets/img/Sequenz12/CoEx_Kanister02.png" alt="Kanister"
                          class="can12 --c2 anim --fade-left --s03">
-                    <img src="/assets/img/Sequenz12/CoEx_Kanister03.png" alt="Kanister"
+                    <img src="/assets/img/20L-A-Serie1.png" alt="Kanister"
                          class="can12 --c3 anim --fade --s02">
                     <img src="/assets/img/Sequenz12/CoEx_Kanister04.png" alt="Kanister"
                          class="can12 --c4 anim --fade-left --s05">
@@ -381,8 +381,8 @@
                          class="can12 --c6 --c5 anim --fade-up --s07">
                     <img src="/assets/img/Sequenz12/CoEx_Flasche03.png" alt="Flasche"
                          class="can12 --c7 --c5 anim --fade-up --s08">
-                    <h1 class="heading --c5 anim --fade --s09">Wir beraten Sie gerne.</h1>
-                    <p class="subheading --c5 anim --fade-left --s10">Unser AgroPack<sup>®</sup> Produktprogramm</p>
+                    <h1 class="heading --c5 anim --fade --s09">Wir beraten Sie gerne,</h1>
+                    <p class="subheading --c5 anim --fade-left --s10">zum Beispiel zu unserem AgroPack<sup>®</sup> Produktprogramm</p>
                     <a href="https://www.kautex.com/de/verpackung/kataloge-broschueren"
                        class="flyer --c5 anim --fade --s14">
                         <img src="/assets/img/Sequenz12/Agrochemie_U1_DE.jpg" alt="Flyer">
@@ -499,6 +499,9 @@
             <p data-target="--b10">10</p>
             <p data-target="--b11">11</p>
             <p data-target="--b12">12</p>
+            <a href="/de/verpackung/coex-ratgeber" style="margin-left: auto" class="active">DE</a>
+            <a href="/en/packaging/coex-guide">EN</a>
+            <a href="/en/packaging/guide-pratique-relatifs-coex">FR</a>
         </div>
     </div>
 </template>
@@ -506,9 +509,9 @@
 <script>
     // usage of shadow dom to prevent script or styling conflicts with the outer website
     const host = document.querySelector("#BannerCoExHost");
-    const shadow = host.attachShadow({mode: "open"});
+    const coexShadow = host.attachShadow({mode: "open"});
     const template = document.getElementById("BannerCoExTemplate");
-    shadow.appendChild(template.content);
+    coexShadow.appendChild(template.content);
 </script>
 <!-- end include banner script on any part of the website -->
 
