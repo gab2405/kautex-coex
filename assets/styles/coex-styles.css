@@ -753,13 +753,19 @@
   overflow: hidden;
 }
 .--b02 .bucket-stream {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: auto;
-  height: 112%;
-  transform: translate(-50%, -90%);
-  transition: transform 1s;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .--b02 .bucket-stream {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: auto;
+    height: 112%;
+    transform: translate(-50%, -110%);
+    transition: transform 1s;
+  }
 }
 .--b02 .bucket {
   width: 48%;
