@@ -740,35 +740,43 @@
 
 @keyframes movebuckets {
   0% {
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
 
   15% {
-    transform: translateX(calc(100% - 33%));
+    -webkit-transform: translateX(67%);
+    transform: translateX(67%);
   }
 
   30% {
-    transform: translateX(calc(100% - 67%));
+    -webkit-transform: translateX(33%);
+    transform: translateX(33%);
   }
 
   45% {
-    transform: translateX(calc(100% - 100%));
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
   }
 
   60% {
-    transform: translateX(calc(100% - 133%));
+    -webkit-transform: translateX(-33%);
+    transform: translateX(-33%);
   }
 
   75% {
-    transform: translateX(calc(100% - 167%));
+    -webkit-transform: translateX(-67%);
+    transform: translateX(-67%);
   }
 
   90% {
-    transform: translateX(calc(100% - 200%));
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
   100% {
-    transform: translateX(calc(100% - 200%));
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -958,11 +966,17 @@
   &.visible {
     .buckets-wrap {
       opacity: 1;
+      -webkit-animation-delay: .9s;
       animation-delay: .9s;
+      -webkit-animation-name: movebuckets;
       animation-name: movebuckets;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
+      -webkit-animation-duration: 7.6s;
       animation-duration: 7.6s;
+      -webkit-animation-timing-function: ease-in-out;
       animation-timing-function: ease-in-out;
+
 
 
       .bucket-liquid {
